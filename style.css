@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+}
+
+.mainpage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/mainBG1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.top {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.logo img {
+    height: 7vh;
+    margin: 2vw;
+}
+/* --> Menu Button <-- */
+.menu {
+    font-size: 7vh;
+    margin: 1.2vw;
+    position: relative;
+}
+.menu:hover{
+    color: gold;
+}
+/* --> Bottom <-- */
+.bottom{
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(to top,rgba(32, 58, 105, 0.603),rgba(0, 0, 0, 0));
+}
+.link{
+    margin: 1vw;
+}
+.b-p{
+    width: 33.33vw;
+    text-align: center;
+    margin: 1vw 0;
+}
+.bottom a{
+    text-decoration: none;
+    color: white;
+}
+.center{
+    padding: 2vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.main-logo{
+    height: 10vh;
+}
+.occu{
+    font-size: 4vh;
+    font-weight: lighter;
+}
+.m-pa{
+    margin: 2vh;
+}
+.btn{
+    background-color: white;
+    color: rgb(32, 58, 105);
+    font-weight: bold;
+    font-size: 3vh;
+    padding: 1vh 2vh;
+    border-bottom-right-radius: 5vh;
+    border-top-left-radius: 5vh;
+    animation: hov 2s alternate infinite;
+    text-align: center;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: rgba(28, 40, 65, 0.685);
+    color: white;
+}
+@keyframes hov{
+    100%{transform: translate(10px);}
+}
+#links img{
+    width: 2vh;
+}
+#myname{
+    color: gold;
+}
+.menu:hover .options{
+    display: block;
+}
+.options{
+    position: absolute;
+    right: 0;
+    background-color:  rgba(28, 28, 71, 0);
+    text-align: center;
+    padding: .5vw;
+    display: none;
+}
+.options a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(28, 28, 71, 0);
+    font-size: 5vh;
+    font-weight: lighter;
+    
+}
+.options a:hover{
+    color: gold;
+    border: 1px solid gold;
+}
+@media screen and (max-width:400px){
+    .center{
+        justify-content: center;
+    }
+    #empty-btm{
+        display: none;
+    }
+}
